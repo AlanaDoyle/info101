@@ -29,7 +29,7 @@ read.csv("woa.csv")
 
 woa.csv <- read.csv("woa.csv", skip = 1)
 
-View("woa.csv")
+View(woa.csv)
 # Fix the column names ----------------------------------------------------
 
 # P5 Fill in the blanks below to create a vector of the depth values.
@@ -37,11 +37,10 @@ View("woa.csv")
 depths <- c(
   seq(0, 100, by = 5),
   seq(125, 550, by = 25),
-  seq(550, 2000, by = 50),
+  seq(600, 2000, by = 50),
   seq(2100, 5500, by = 100)
 )
 
-woa_long
 # P6 Create a vector called woa_colnames with clean names for all 104 columns.
 # Make them the column names of your WOA data frame.
 woa_colnames <- paste0("depth_",depths)
